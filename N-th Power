@@ -3,14 +3,13 @@ function index(array, n){
   
   let arrayPosition = (array.length - 1)
   
-  console.log(arrayPosition)
   
-  if n > arrayPosition {
+  if (n > arrayPosition) {
     return -1 
   } 
   
   else {
-    return array[n]^n
+    return Math.pow(array[n], n)
   }
   
 }
