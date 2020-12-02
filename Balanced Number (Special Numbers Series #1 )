@@ -26,9 +26,35 @@ C
 function balancedNum(number)
 { 
   let stringy = number.toString()
+  let stringTest = stringy.length % 2
   
-  if(stringy % 2 != 0) {
+
+ 
+  
+  if(stringTest != 0) {
+    let middleDigitOdd = Math.floor(stringy.length/2)
     
+    let leftNumbers = stringy.slice(0,middleDigitOdd)
+    
+    let rightNumberStart = middleDigitOdd + 1
+    let rightNumberEnd = stringy.length
+    
+    let rightNumbers = stringy.slice(rightNumberStart,rightNumberEnd)
+    
+
+
+    
+ 
+    
+    console.log(leftNumbers)
+    
+    console.log(rightNumberStart)
+    console.log(rightNumberEnd)
+    console.log(rightNumbers)
+  } 
+  else {
+//     let middleDigitEven = (stringy.length/2) and ((stringy.length/2) - 1)
+    console.log("even")
   }
     
 }
